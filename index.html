@@ -34,7 +34,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#問題6">問題6</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#問題7">問題7</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#問題8">問題8</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#問題9">問題9</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#問題9">問題9</a></li> -->
                     <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#如果參與這個訓練，會怎麼安排學習時間？">	如果參與這個訓練，會怎麼安排學習時間？</a></li> -->
                     <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#是否有想要加入的公司？為什麼想加入該公司？">是否有想要加入的公司？為什麼想加入該公司？</a></li> -->
                     <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#請描述一件產生明顯負面情緒的經歷，如何處理該情緒？">請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</a></li> -->
@@ -100,10 +100,10 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
                     </div> -->
-                    <h5 class="mb-0">我叫蔡尚峰，目前就讀於師範大學數學系，目前大四，在大二時因為對數據分析感到好奇而開始查找相關資訊、自學程式以及修習資訊相關課程，在學習的過程中學會了數據分析、line bot機器人、前後端串接等等程式應用，並參與了兩屆ccClub python自學讀書會、Appworks school 設計你的數位產品工作坊，也有擔任過陳年興教授的研究助理，主要負責產品的開發。
+                    <p class="mb-0">我叫蔡尚峰，目前就讀於師範大學數學系，目前大四，在大二時因為對數據分析感到好奇而開始查找相關資訊、自學程式以及修習資訊相關課程，在學習的過程中學會了數據分析、line bot機器人、前後端串接等等程式應用，並參與了兩屆ccClub python自學讀書會、Appworks school 設計你的數位產品工作坊，也有擔任過陳年興教授的研究助理，主要負責產品的開發。
 
                         在前後端方面，除了參與Appworks school工作坊之外，我也做過兩個專案，一個為結合Azure機器學習的網站，主要是讓國高中生能夠藉由學習的心得來更了解自己，另外一個則是我的個人專案，延續Appworks school提供的資源，我將網站的功能進行延伸，並串借線上資料庫以及部屬上雲端。
-                        </h5>
+                    </p>
                 </div>
             </section>
             <hr class="m-0" />
@@ -111,6 +111,26 @@
             <section class="resume-section" id="問題2">
                 <div class="resume-section-content">
                     <h3 class="mb-5">為了成為軟體工程師，做過什麼努力？若有具體作品請分享給我們。</h3>
+                    <h5 class="mb-0 lowercase">圖像辨識機器人 (展示影片：https://reurl.cc/OG7V5r )</h5><p>
+
+                        麵包探險家是一個圖像辨識的Line Bot，主要功能是讓使用者傳入麵包圖片後，藉由圖像辨識讓使用者了解該麵包的介紹以及歷史，並推薦給使用者當前位置附近的最近麵包店，整體專案中，我們串接了Azure的圖像辨識、Google map API、Open AI API，在過程中，我們遇到了許多問題，例如：Azure的圖像辨識雖然可以讀取網址，卻無法讀取imgur的圖庫，並在團隊積極溝通下，我們決定放棄使用imgur，轉而將照片直接儲存在本機上，另外則是因為我們雖然串接了chatGPT來進行麵包的說明，但由於chatGPT回答內容並不是完全準確，因此我們設置了fakeGPT，主要是將正確率高的答案進行儲存，在下一次使用者有相同麵包名稱時，直接返回該內容，也能夠更快速的回覆使用者。
+                        在整體專案中，我主要負責Line Bot的串接和整合，將組員提供的代碼進行串接以及Google map API的製作，團隊每個人的工作佔比皆為1/3。
+                    </p>
+                    <br>
+                    <h5 class="mb-0 lowercase">學習分析網站 (展示影片：https://reurl.cc/2zMEXE )</h5>
+                    <p>
+
+                        網站的前端使用是HTML所開發，後端則是使用Python，在過程中，我遇到如何將組員提供的獨立檔案與前後端進行串接的挑戰，而由於一開始串接並不成功，因此我藉由設計不同的前端界面來進行測試，並在之後逐步完成初步的串接，並讓前端按鈕通過GET或POST API呼叫後端函式，與Azure進行情緒分析和訓練資料的串接。在確認基礎功能正常後，我開始改善前端界面並增強後端功能，並在最後成功完成了四大功能，使學習者能夠上傳文件，並獲得相應的分析結果。
+                    </p>
+                    <br>
+
+                    <h5 class="mb-0 lowercase">moodblog網站專案(專案網址：https://mood-blog-website.vercel.app)</h5>
+                    <p>
+
+                        前端：React, Tailwind CSS、後端：Express.js、人工智慧：GPT3.5、開發工具：Git, Github、資料庫：MongoDB、部屬服務器：Vercel
+
+                        網站主要功能為提供使用者撰寫日記，在撰寫日記中可以點選情緒、輸入心情描述以及日記，也能同時藉由chatGPT來給予及時回復，在撰寫日記之後，使用者可以查看藉由點選不同日期來查看當天的所有日記，並可以進行修改、下載以及分享，而最後則是給予使用者情緒建議，當使用者點選開始日期和結束日期後，chatGPT會觀察使用者的情緒來給予情緒建議。
+                                            </p>
                     <!-- <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">University of Colorado Boulder</h3>
@@ -135,6 +155,12 @@
             <section class="resume-section" id="問題3">
                 <div class="resume-section-content">
                     <h3 class="mb-5">如果參與這個訓練，會怎麼安排學習時間？</h3>
+                    <p class="mb-0">若能參與這個訓練，對我來說是一個非常重要的學習機會，由於了解自己對於前後端的內容和知識非常零碎，並且以後端工程師為目標，因此自己會全心全意地進行學習。
+
+                        我會利用平日晚上和假日時間用於學習其後端開發的相關知識，學校的空堂時間也會拿來補足自己的問題。
+                        
+                        在進行學習時，我會先了解整體的學習目標以及架構，將目標拆分成數個小目標來進行學習，而學習的過程中，我也會不斷的調整學習計畫來讓自己更有效率的學習。
+                        </p>
                     <!-- <div class="subheading mb-3">Programming Languages & Tools</div>
                     <ul class="list-inline dev-icons">
                         <li class="list-inline-item"><i class="fab fa-html5"></i></li>
@@ -172,19 +198,18 @@
                 </div> -->
             </section>
             <hr class="m-0" />
-            <!-- Interests-->
+            <!-- Awards-->
             <section class="resume-section" id="問題4">
                 <div class="resume-section-content">
                     <h3 class="mb-5">是否有想要加入的公司？為什麼想加入該公司？</h3>
-                    <!-- <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p> -->
-                    <!-- <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p> -->
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="問題5">
-                <div class="resume-section-content">
-                    <h3 class="mb-5">是否有想要加入的公司？為什麼想加入該公司？</h3>
+                    <p class="mb-0">我目前沒有特別想要進入哪一間公司，但如果公司有下列的特質，那會是是我想要加入的。<br><br>
+
+                        技術導向：我希望加入一家注重技術創新和專業發展的公司，這樣的環境能夠讓我不斷學習和成長。<br>
+                        
+                        開放文化：我希望加入一家擁有開放、包容和積極溝通氛圍的公司，這樣我可以自由地表達觀點、參與討論，並且與同事建立良好的合作關係。<br>
+                        
+                        工作平衡：我希望加入一家重視員工工作與生活平衡的公司，這樣我可以有更多的時間與家人、朋友共度，並且在工作中更有動力和效率。
+                        </p>
                     <!-- <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
@@ -229,9 +254,38 @@
             </section>
             <hr class="m-0" />
             <!-- Interests-->
-            <section class="resume-section" id="問題6">
+            <section class="resume-section" id="問題5">
                 <div class="resume-section-content">
                     <h3 class="mb-5">請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</h3>
+                    <p class="mb-0">上學期我受蔡芸琤教授的推薦，成為陳年興教授的研究助理，團隊主要由資工系大四所組成，而整體團隊的運作流程以及程式碼我都從未學習過的，且因為程式碼是已離開的資工系學長撰寫，因此我需要自行去了解整體的運作架構，雖然具有挑戰性，但我仍冷靜拆解問題和思考如何解決問題。 
+
+                        一開始，我通過不斷的修改程式碼，藉由輸出內容來理解程式碼的整體架構的運作，並投入更多時間在辦公室自行學習，在初步了解整體架構後，我開始嘗試開發新功能，例如：讓機器人能夠進行語音辨識、讀取使用者傳至server的QR-code，雖然經常會遇到難以解決的bug，同時又因為機器人執行後不會顯示具體哪一行是錯誤的代碼，只能判斷是否有成功，面對這些問題，我會理性地將問題進行拆解，並會用了類似前後端串接的方法，逐步輸出簡單的程式碼來確認程序是否正確執行，這樣方法雖然不能一次成功，但能通過不斷嘗試，逐步靠近目標，在每一次都確認這些小目標達成後，一步步靠近目標。 在釐清整體的架構之後，我開始按照教授的需求進行程式碼的更改，並能夠快速理解教授所要求的指示，透過每周與meeting的時間回報進度，這樣的學習方式，我能夠快速學習不同資源，逐步達成所設定的目標。
+                        
+                        
+                        <br><br><br>冷靜思考問題：當面對技術問題或挑戰時，不要陷入情緒化的反應中。保持冷靜，仔細思考問題的本質和可
+                        能的解決方案。透過系統性的分析，找出問題的根源，然後制定解決方案。
+                        
+                        <br>與團隊溝通：如果專案進度延遲或出現其他問題，及時與團隊成員溝通是非常重要的。分享你的擔憂和困惑，並討論可能的解決方案。團隊合作和支持可以幫助減輕壓力，並找到更好的解決方案。
+                        
+                        <br>尋求幫助：當遇到困難時，不要害怕尋求幫助。可以向同事、上級或專業顧問尋求建議和支持。分享問題並向他人尋求意見可能會帶來新的想法和洞察力。
+                        
+                        <br>保持積極心態：儘管面臨挑戰，但保持積極的心態是至關重要的。相信自己有能力克服困難，並且相信每個挑戰都是一個學習和成長的機會。
+                        
+                        <br>尋找放鬆和平衡：在工作之餘，找一些放鬆身心的活動來平衡工作和生活。例如運動、閱讀、旅行或與親友聚會等。保持身心的健康有助於更好地應對挑戰和壓力。
+                        </p>
+                    <!-- <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p> -->
+                    <!-- <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p> -->
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="問題6">
+                <div class="resume-section-content">
+                    <h3 class="mb-5">關於這份申請網頁，分享一個開發時的技術心得。</h3>
+                    <p class="mb-0">在製作這份申請網頁之前，已經有將其他網頁成功部屬上去的經驗，是使用Azure以及Vercel來進行部屬，但由於網頁並非完全靜態，因此並沒有成功部屬過Github page。在了解初步上網了解Github page的部屬方式後，我在網路上尋找靜態網站的模板，並將其下載下來進行使用。
+
+                        接著我透過html、css和javascript來修改頁面，在修改過程中，查找了許多網站以及詢問chatgpt來解決問題
+                         </p>
                     <!-- <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p> -->
                     <!-- <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p> -->
                 </div>
@@ -240,7 +294,10 @@
             <!-- Interests-->
             <section class="resume-section" id="問題7">
                 <div class="resume-section-content">
-                    <h3 class="mb-5">關於這份申請網頁，分享一個開發時的技術心得。</h3>
+                    <h3 class="mb-5">請用簡短兩三句話，描述對你而言，最重要的一項人際交往原則。</h3>
+                    <p class="mb-0">對我而言，最重要的人際交往原則是真誠和尊重。
+                        我認為良好的溝通是建立在真誠以及尊重的基礎上，能夠讓對方了解你的需求，而團隊合作時，也能夠與團員進行信任。
+                          </p>
                     <!-- <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p> -->
                     <!-- <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p> -->
                 </div>
@@ -248,15 +305,6 @@
             <hr class="m-0" />
             <!-- Interests-->
             <section class="resume-section" id="問題8">
-                <div class="resume-section-content">
-                    <h3 class="mb-5">請用簡短兩三句話，描述對你而言，最重要的一項人際交往原則。</h3>
-                    <!-- <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p> -->
-                    <!-- <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p> -->
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="問題9">
                 <div class="resume-section-content">
                     <h3 class="mb-5">其他想要對我們說的事情？</h3>
                     <!-- <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p> -->
